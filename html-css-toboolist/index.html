@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Toboolist</title>
+</head>
+<body>
+    <header class="header">
+        <img class="header__logo" src="./img/Toboolist-logo.jpg" alt="Logo Toboolist">
+    </header>
+    <main>
+        <div class="container">
+            <div class="container__options">
+                <div class="container__options-buttons">
+                    <button class="container__options-button add-task" autofocus>Add Task</button>
+                    <button class="container__options-button add-section">Add Section</button>
+                </div>
+            </div>
+            <div class="container__tasks">
+                <section class="container__tasks-new">
+                    <h2><span class="arrow">&#x25BE;</span>New Task</h2>
+                    <div class="tasks-list">
+                        <div class="task">
+                            <input type="checkbox" id="quarterly-newsletter" name="task_checkbox" value="Quarterly Newsletter" class="container__tasks-new-checkbox" checked>
+                            <label for="quarterly-newsletter">
+                                Quarterly Newsletter
+                                <span class="category-label editorial">Editorial</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <section class="container__tasks-today">
+                    <h2><span class="arrow">&#x25BE;</span>Today</h2>
+                    <div class="tasks-list">
+                        <div class="task">
+                            <input type="checkbox" id="recruiting-blog" name="task_checkbox" value="Recruiting blog post" class="container__tasks-today-checkbox" checked>
+                            <label for="recruiting-blog">
+                                Recruiting blog post
+                                <span class="category-label editorial">Editorial</span>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="mobile-app" name="task_checkbox" value="Mobile app launch" class="container__tasks-today-checkbox" checked>
+                            <label for="mobile-app">
+                                Mobile app launch
+                                <span class="category-label q1-goals">Q1 Goals</span>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="interview-john" name="task_checkbox" value="Interview John H." class="container__tasks-today-checkbox">
+                            <label for="interview-john">
+                                Interview John H.
+                                <span class="category-label recruiting">Recruiting</span>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="summit-update" name="task_checkbox" value="Summit update to mobile storefronts" class="container__tasks-today-checkbox" checked>
+                            <label for="summit-update">
+                                Summit update to mobile storefronts
+                                <span class="category-label mobile">Mobile</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+                <section class="container__tasks-upcoming">
+                    <h2><span class="arrow">&#x25BE;</span>Upcoming</h2>
+                    <div class="tasks-list">
+                        <div class="task">
+                            <input type="checkbox" id="schedule-meeting" name="task_checkbox" value="Schedule meeting with Alex" class="container__tasks-upcoming-checkbox">
+                            <label for="schedule-meeting">
+                                Schedule meeting with Alex
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="homepage-refresh" name="task_checkbox" value="Homepage refresh" class="container__tasks-upcoming-checkbox" checked>
+                            <label for="homepage-refresh">
+                                Homepage refresh
+                                <span class="category-label website">Website</span>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="onboard-sales" name="task_checkbox" value="Onboard new Sales team members" class="container__tasks-upcoming-checkbox" checked>
+                            <label for="onboard-sales">
+                                Onboard new Sales team members
+                                <span class="category-label sales">Sales</span>
+                            </label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="review-calendar" name="task_checkbox" value="Review editorial calendar" class="container__tasks-upcoming-checkbox" checked>
+                            <label for="review-calendar">
+                                Review editorial calendar
+                                <span class="category-label editorial">Editorial</span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

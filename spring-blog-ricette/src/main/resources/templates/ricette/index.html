@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home - Blog di Ricette</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+<body>
+<div class="container mt-4">
+    <h1>Ricette Recenti</h1>
+    <div class="row">
+        <form th:action="@{/ricette/search}" method="get">
+            <div class="input-group">
+                <input type="text" class="form-control" name="q" placeholder="Cerca pizza" th:value="${keyword}">
+                <button type="submit" class="btn btn-primary">Cerca</button>
+            </div>
+        </form>
+        <div th:each="ricetta : ${ricette}" class="col-md-4 mb-4">
+            <div class="card d-flex flex-column">
+                <img th:src="${ricetta.fotoUrl}" alt="Foto Ricetta" class="card-img-top img-fluid d-block">
+                <div class="card-body flex-grow-1 overflow-auto">
+                    <h2 class="card-title" th:text="${ricetta.titolo}"></h2>
+                    <div th:if="${ricetta.categoria != null}">
+                        <p th:text="${ricetta.categoria.nome}"></p>
+                    </div>
+                    <p class="card-text" th:text="${#strings.abbreviate(ricetta.testoRicetta, 100)}">...</p>
+                    <a th:href="@{/ricette/{id}(id=${ricetta.id})}" class="btn btn-primary">Leggi di più</a>
+                    <a th:href="@{/ricette/edit/{id}(id=${ricetta.id})}" class="btn btn-danger">Modifica</a>
+
+                </div>
+            </div>
+        </div>
+        <a th:href="@{/ricette/create}" class="btn btn-primary mb-3">Crea Nuova Ricetta</a>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

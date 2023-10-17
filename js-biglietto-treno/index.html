@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Train Ticket App</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <h2>Calculate Ticket Price</h2>
+            <div>
+                <form action="/submit-form" method="POST" class="form-container">
+                    <div class="form-container">
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="first-name">First Name:</label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="birth-date">Birth Date:</label>
+                                <div class="input-group">
+                                    <input type="text" id="birth-day" name="birth-day" placeholder="Day" required>
+                                    <input type="text" id="birth-month" name="birth-month" placeholder="Month" required>
+                                    <input type="text" id="birth-year" name="birth-year" placeholder="Year" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="departure-station">From:</label>
+                                <input type="text" id="departure-station" name="departure-station" required>
+                            </div>
+                            <div class="form-field">
+                                <label for="destination-station">To:</label>
+                                <input type="text" id="destination-station" name="destination-stationo" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <label for="km-to-go">Km to go:</label>
+                                <input type="number" id="km-to-go" name="km-to-go">
+                            </div>
+                            <div class="form-field">
+                                <label for="age-selector">Age:</label>
+                                <select id="age-selector" name="age-selector">
+                                    <option value="empty-option">...</option>
+                                    <option value="underage">Underage</option>
+                                    <option value="adult">Adult</option>
+                                    <option value="over-65">Over 65</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-field">
+                                <button type="submit" class="btn-buy">Buy Ticket</button>
+                            </div>
+                            <div class="form-field">
+                                <button type="button" class="btn-cancel">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="ticket-modal">
+            <div class="ticket-container">
+                <div class="ticket">
+                    <div class="ticket-header">
+                        <h2>Train Ticket</h2>
+                    </div>
+                    <div class="ticket-content">
+                        <div class="passenger-info">
+                            <div class="info-row">
+                                <div class="info-label">Passenger Name:</div>
+                                <p class="info-value" id="ticket-name"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Seat:</div>
+                                <p class="info-value" id="ticket-seat"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Price:</div>
+                                <p class="info-value" id="ticket-price"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">From:</div>
+                                <p class="info-value" id="ticket-departure"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">To:</div>
+                                <p class="info-value" id="ticket-destination"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Train Carriage:</div>
+                                <p class="info-value" id="ticket-carriage"></p>
+                            </div>
+                            <div class="info-row">
+                                <div class="info-label">Ticket Type:</div>
+                                <p class="info-value" id="ticket-type"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

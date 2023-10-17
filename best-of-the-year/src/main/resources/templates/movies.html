@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Best Movies</title>
+</head>
+<body>
+<h1>Best Movies</h1>
+<ul>
+    <li th:each="movie : ${bestMovies}">
+        <span th:text="${movie.getTitle()}"></span>
+    </li>
+</ul>
+</body>
+</html>

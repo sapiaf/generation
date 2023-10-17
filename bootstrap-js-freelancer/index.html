@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap HTML Freelancer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid container-lg">
+                <a class="navbar-brand text-right text-info" href="#">Portfolio</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-info text-decoration-underline" href="#">CONTACT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Main Content-->
+    <main>
+        <!-- First Section -->
+        <section class="bg-info text-center py-5">
+            <img class="img-fluid w-25" src="./img/undraw_profile_pic_ic5t.svg" alt="Profile Picture">
+            <h1>Pinco Pallo</h1>
+            <p>WEB DESIGNER</p>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="container-fluid container-lg text-center py-5">
+            <div class="row">
+                <h2>PORTFOLIO</h2>
+            </div>
+            <!-- Portfolio Grid -->
+            <div class="row gy-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/cabin.png" alt="Cabin in the woods">
+                        <div class="card-body">
+                            <h5 class="card-title">Cabin Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/cake.png" alt="Slice of cake">
+                        <div class="card-body">
+                            <h5 class="card-title">Cake Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/circus.png" alt="Circus entrance">
+                        <div class="card-body">
+                            <h5 class="card-title">Circus Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/game.png" alt="Gamepad">
+                        <div class="card-body">
+                            <h5 class="card-title">Game Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/safe.png" alt="Safe">
+                        <div class="card-body">
+                            <h5 class="card-title">Safe Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img class="card-img-top" src="./img/portfolio/submarine.png" alt="Yellow submarine">
+                        <div class="card-body">
+                            <h5 class="card-title">Submarine Website</h5>
+                            <button type="button" class="btn btn-info mx-1">Preview</button>
+                            <button type="button" class="btn btn-outline-info mx-1">Visit site</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Form Section -->
+        <section class="bg-info py-5">
+            <h2 class="text-center">WANT AN OFFER?</h2>
+
+            <div class="container-lg">
+                <form class="row g-3" id="form">
+                    <div class="col-md-6">
+                        <label for="inputFirstName" class="form-label" >First name</label>
+                        <input type="text" class="form-control" id="inputFirstName"
+                            placeholder="Enter your first name..." required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputLastName" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="inputLastName"
+                            placeholder="Enter your last name..." required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputHours" class="form-label">Hours requested</label>
+                        <input type="text" class="form-control" id="inputHours" placeholder="Hours requested...">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Type of work</label>
+                        <select id="inputState" class="form-select">
+                            <option>Backend Development</option>
+                            <option>Frontend Development</option>
+                            <option>Project Analysis</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 has-validation">
+                        <label for="inputDiscount" class="form-label">Discount code</label>
+                        <input type="text" class="form-control" id="inputDiscount">
+                        <div class="invalid-feedback">
+                            The discount code is invalid or has expired
+                        </div>
+                    </div>
+                    <div>
+                        <label for="inputMessage">Message</label>
+                        <textarea class="form-control" id="inputMessage"
+                            rows="4" placeholder="Specify your work commission..."></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                    <p id="form-message"></p>
+                    <p id="form-error"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid bg-dark text-secondary text-center pt-4">
+            <div class="row">
+                <h5>LOCATION</h5>
+                <p>2215 John Daniel Drive <br>
+                    Clark, MO 65243</p>
+
+            </div>
+            <div class="row">
+                <p>Copyright © Your Website 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
